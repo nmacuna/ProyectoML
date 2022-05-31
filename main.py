@@ -22,8 +22,7 @@ import os.path as osp
 
 # Librerías adicionales
 import streamlit as st
-pip install joblib
-from joblib import load
+import pickle
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 
@@ -108,7 +107,7 @@ def upload():
     }
     
     for name, values in models.items():
-        values["model"] = load(f"Models/{name}.pkl")
+        values["model"] = pickle.load(f"https://github.com/nm.acuna/ProyectoML/main/Models/{name}.pkl")
 
     return models
 
