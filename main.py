@@ -23,8 +23,6 @@ import os.path as osp
 # Librerías adicionales
 import streamlit as st
 import pickle
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
 
 # Entrenamiento del modelo de K-means
 from sklearn.cluster import KMeans, DBSCAN
@@ -46,9 +44,6 @@ from Preprocessing import Preprocesamiento
 from Preprocessing import ToPolynomial
 
 from PIL import Image
-import streamlit as st
-import plotly.graph_objects as go
-from plotly.subplots import make_subplots
 
 
 # =============================================================================
