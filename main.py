@@ -45,6 +45,8 @@ from Preprocessing import ToPolynomial
 
 from PIL import Image
 
+print(os.listdir())
+print(os.listdir(Img'))
 
 # =============================================================================
 # 
