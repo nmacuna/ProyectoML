@@ -7,5 +7,4 @@ Autores:
 - Nayled Acuña
 - Carlos Oliveros
 
-Para acceder a la herramienta haga clic acá: www.###.com
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/nmacuna/ProyectoML/main/main.py/)
+Para acceder a la herramienta haga clic acá: [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/nmacuna/ProyectoML/main/main.py/)
