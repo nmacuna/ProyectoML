@@ -22,7 +22,9 @@ import os.path as osp
 
 # Librerías adicionales
 import streamlit as st
-import pickle
+from joblib import load
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 
 # Entrenamiento del modelo de K-means
 from sklearn.cluster import KMeans, DBSCAN
@@ -44,9 +46,10 @@ from Preprocessing import Preprocesamiento
 from Preprocessing import ToPolynomial
 
 from PIL import Image
+import streamlit as st
+import plotly.graph_objects as go
+from plotly.subplots import make_subplots
 
-print(os.listdir())
-print(os.listdir('Img'))
 
 # =============================================================================
 # 
@@ -104,7 +107,7 @@ def upload():
     }
     
     for name, values in models.items():
-        values["model"] = pickle.load(f"https://github.com/nm.acuna/ProyectoML/main/Models/{name}.pkl")
+        values["model"] = load(f"Models/{name}.pkl")
 
     return models
 
@@ -337,4 +340,3 @@ df_entrada = pd.DataFrame( df_entrada , columns = df_Base.columns )
 # Create a button, that when clicked, shows a text
 if(st.button("Calculate performance of the infrastructure investment")):
     PredictYClasific(df_entrada, df_Base,list_n.index(DTO))
-
