@@ -70,7 +70,7 @@ with col2:
     st.write("")
 
 with col3:
-    logo=Image.open("Img\Asset_1.png")
+    logo=Image.open("./Img/Asset_1.png")
     st.image(logo, width=200)
 
 # Header
@@ -188,16 +188,18 @@ def PredictYClasific(df_entrada,df_Base,dep):
     st.write("The economic impact will be", float(np.round_((dbl_Impacto-1)*100,decimals=2)),'%')
     st.write('It will be classified on infrastructure development as', classes[dbl_Clase[0]+1])
     if dbl_Clase[0]+1==1:
-        img = Image.open("Img\Map_C1.png")
+        img = Image.
+        
+        ("Img\Map_C1.png")
         st.image(img, width=500)
     elif dbl_Clase[0]+1==2:
-        img = Image.open("Img\Map_C2.png")
+        img = Image.open("./Img/Map_C2.png")
         st.image(img, width=500)
     elif dbl_Clase[0]+1==3:
-        img = Image.open("Img\Map_C3.png")
+        img = Image.open("./Img/Map_C3.png")
         st.image(img, width=500)
     else:
-        img = Image.open("Img\Map_C4.png")
+        img = Image.open("./Img/Map_C4.png")
         st.image(img, width=500)
     st.write("Showing Departments with similar infrastructure development and PIB")
 
