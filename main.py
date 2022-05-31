@@ -25,6 +25,7 @@ import streamlit as st
 import pickle
 
 # Entrenamiento del modelo de K-means
+!pip install sklearn
 from sklearn.cluster import KMeans, DBSCAN
 
 from sklearn.preprocessing import MinMaxScaler
