@@ -22,6 +22,7 @@ import os.path as osp
 
 # Librerías adicionales
 import streamlit as st
+!pip install joblib
 from joblib import load
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
