@@ -8,4 +8,4 @@ Autores:
 - Carlos Oliveros
 
 Para acceder a la herramienta haga clic acá: www.###.com
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/casoliveros95/ProyectoML/main/main.py/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://share.streamlit.io/nmacuna/ProyectoML/main/main.py/)
